@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* SYKLONE Fans Brand Design System - Premium Gold Theme
+All colors MUST be HSL.
+Color Palette:
+- Background: Dark / Black (#0F1115)
+- Gold Accent: #C9A24D
+- Gold Light: #E6D8A3
+- Primary Text: White (#FFFFFF)
+- Secondary Text: Light Grey (#B0B0B0)
+*/
+
+@layer base {
+  :root {
+    --background: 220 10% 7%; /* #0F1115 */
+    --foreground: 0 0% 100%; /* White */
+
+    --card: 220 10% 9%; /* #141414 */
+    --card-foreground: 0 0% 100%;
+
+    --popover: 220 10% 9%;
+    --popover-foreground: 0 0% 100%;
+
+    /* SYKLONE Brand Colors - Premium Gold Palette */
+    --primary: 42 50% 54%; /* Gold #C9A24D */
+    --primary-foreground: 220 10% 7%; /* Dark for contrast */
+    --primary-dark: 42 45% 40%; /* Darker gold */
+    --primary-light: 45 50% 76%; /* Soft gold #E6D8A3 */
+
+    --secondary: 220 10% 12%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 10% 15%;
+    --muted-foreground: 0 0% 69%; /* #B0B0B0 */
+
+    --accent: 42 50% 54%; /* Gold */
+    --accent-foreground: 220 10% 7%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 42 30% 30%; /* Gold tinted border */
+    --input: 220 10% 20%;
+    --ring: 42 50% 54%;
+
+    /* Premium gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(42 50% 54%), hsl(42 45% 40%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 10% 7%) 0%, hsl(220 10% 12%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(220 10% 9%) 0%, hsl(220 10% 12%) 100%);
+    
+    /* Professional shadows with gold tint */
+    --shadow-premium: 0 20px 40px -10px hsl(42 50% 54% / 0.15);
+    --shadow-card: 0 4px 20px hsl(0 0% 0% / 0.3);
+    --shadow-button: 0 4px 15px hsl(42 50% 54% / 0.25);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 220 10% 7%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 42 50% 54%;
+    --sidebar-primary-foreground: 220 10% 7%;
+    --sidebar-accent: 220 10% 15%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 42 30% 30%;
+    --sidebar-ring: 42 50% 54%;
+  }
+
+  .dark {
+    --background: 220 10% 7%;
+    --foreground: 0 0% 100%;
+
+    --card: 220 10% 9%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 220 10% 9%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 42 50% 54%;
+    --primary-foreground: 220 10% 7%;
+    --primary-dark: 42 45% 40%;
+    --primary-light: 45 50% 76%;
+
+    --secondary: 220 10% 12%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 10% 15%;
+    --muted-foreground: 0 0% 69%;
+
+    --accent: 42 50% 54%;
+    --accent-foreground: 220 10% 7%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 42 30% 30%;
+    --input: 220 10% 20%;
+    --ring: 42 50% 54%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(42 50% 54%), hsl(42 45% 40%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 10% 7%) 0%, hsl(220 10% 12%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(220 10% 9%) 0%, hsl(220 10% 12%) 100%);
+    --sidebar-background: 220 10% 7%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 42 50% 54%;
+    --sidebar-primary-foreground: 220 10% 7%;
+    --sidebar-accent: 220 10% 15%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 42 30% 30%;
+    --sidebar-ring: 42 50% 54%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
